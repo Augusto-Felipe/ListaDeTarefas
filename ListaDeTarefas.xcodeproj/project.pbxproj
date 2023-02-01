@@ -13,6 +13,8 @@
 		50E29B6E298AEA6C001CCC54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50E29B6C298AEA6C001CCC54 /* Main.storyboard */; };
 		50E29B70298AEA6E001CCC54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50E29B6F298AEA6E001CCC54 /* Assets.xcassets */; };
 		50E29B73298AEA6E001CCC54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50E29B71298AEA6E001CCC54 /* LaunchScreen.storyboard */; };
+		50E29B7B298AF012001CCC54 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E29B7A298AF012001CCC54 /* DetailsViewController.swift */; };
+		50E29B7D298AF5D3001CCC54 /* TarefaUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E29B7C298AF5D3001CCC54 /* TarefaUserDefaults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		50E29B6F298AEA6E001CCC54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50E29B72298AEA6E001CCC54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50E29B74298AEA6E001CCC54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50E29B7A298AF012001CCC54 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		50E29B7C298AF5D3001CCC54 /* TarefaUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarefaUserDefaults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,8 @@
 		50E29B5A298AEA6C001CCC54 = {
 			isa = PBXGroup;
 			children = (
+				50E29B7A298AF012001CCC54 /* DetailsViewController.swift */,
+				50E29B7C298AF5D3001CCC54 /* TarefaUserDefaults.swift */,
 				50E29B65298AEA6C001CCC54 /* ListaDeTarefas */,
 				50E29B64298AEA6C001CCC54 /* Products */,
 			);
@@ -140,7 +146,9 @@
 			files = (
 				50E29B6B298AEA6C001CCC54 /* ViewController.swift in Sources */,
 				50E29B67298AEA6C001CCC54 /* AppDelegate.swift in Sources */,
+				50E29B7D298AF5D3001CCC54 /* TarefaUserDefaults.swift in Sources */,
 				50E29B69298AEA6C001CCC54 /* SceneDelegate.swift in Sources */,
+				50E29B7B298AF012001CCC54 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,11 +308,14 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.felipeaugusto.ListaDeTarefas;
+				PRODUCT_BUNDLE_IDENTIFIER = com.felipeaugusto.AlertaProjeto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -328,11 +339,14 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.felipeaugusto.ListaDeTarefas;
+				PRODUCT_BUNDLE_IDENTIFIER = com.felipeaugusto.AlertaProjeto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
